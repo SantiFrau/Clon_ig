@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-border {
+  padding:2px;
+  background: linear-gradient(to bottom left, #f6ad55, #d53f8c), 
+              linear-gradient(to top right, #f6ad55, #d53f8c); /* Gradiente */
+  background-origin: border-box; /* Especifica que el fondo se extiende a través del borde */
+  background-clip: content-box, border-box; /* Define cómo el fondo se recorta */
+
+}
+
+
+.transition-h{
+  transition: transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
