@@ -7,13 +7,13 @@ function App() {
   return (
     <>
 
-      <div className="flex flex-row text-white ">
+      <div className="flex flex-row text-white gap-3 w-full h-full ">
          
          <Nav></Nav>
 
-         <div className='w-4/5 h-full bg-black flex'>
+         <div className=' w-full h-full bg-black flex'>
 
-          <div className='w-2/3 h-full flex flex-col gap-10' >
+          <div className='w-2/3 h-full flex flex-col gap-5 m-auto' >
              <Historias></Historias>
              
              <Publicaciones></Publicaciones>
