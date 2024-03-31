@@ -4,6 +4,7 @@ import ChatIcon from '@mui/icons-material/Chat';
 import TuneIcon from '@mui/icons-material/Tune';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import Buscador from './buscador';
 export default function Nav () {
     const reload = ()=>{
@@ -23,7 +24,9 @@ export default function Nav () {
            
             <li onClick={reload} className="cursor-pointer mx-5 p-3 rounded-lg hover:bg-zinc-800 flex flex-row gap-2"><HomeIcon></HomeIcon> <p>Home</p></li>
             <li onClick={()=>{setMenu(!menu)}} className="cursor-pointer mx-5 p-3 rounded-lg hover:bg-zinc-800 flex flex-row gap-2"> <SearchIcon></SearchIcon> <p>Search</p></li>
-            <li className="cursor-pointer mx-5 p-3 rounded-lg hover:bg-zinc-800 flex flex-row gap-2"><ChatIcon></ChatIcon> <p>messages</p></li>
+            <NavLink to="/Clon_ig/mensajes">
+            <li onClick={()=>{setMenu(!menu)}} className="cursor-pointer mx-5 p-3 rounded-lg hover:bg-zinc-800 flex flex-row gap-2"><ChatIcon></ChatIcon> <p>messages</p></li>
+            </NavLink>
             <li className="cursor-pointer mx-5 p-3 rounded-lg hover:bg-zinc-800 flex flex-row gap-2"> <img src="perfil.webp" className='w-8 rounded-full object-cover' style={{aspectRatio:1/1}} alt="" /><p>Profile</p></li>
           </ul>
           <h4 className="cursor-pointer m-5 p-3 flex flex-row gap-2"> <TuneIcon></TuneIcon> <p>More</p></h4>
