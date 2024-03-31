@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  background-color: #000;
+}
 .gradient-border {
   padding:2px;
   background: linear-gradient(to bottom left, #f6ad55, #d53f8c), 

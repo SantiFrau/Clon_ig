@@ -13,7 +13,7 @@ function App() {
 
          <div className=' w-full h-full bg-black flex'>
 
-          <div className='w-2/3 h-full flex flex-col gap-5 m-auto' >
+          <div className='w-2/3 h-full flex flex-col gap-5 m-auto mt-10 md:mt-0' >
              <Historias></Historias>
              
              <Publicaciones></Publicaciones>
