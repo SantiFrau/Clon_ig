@@ -15,7 +15,7 @@ export default function Historias (){
     };
 
     return(
-        <section className='relative flex flex-row w-full text-white  p-5 px-7 h-40' >
+        <section className='relative flex flex-row w-full md:w-2/3 text-white  p-5 px-7 h-40' >
               <div onClick={scrollToLeft} className={`z-10 absolute top-8 left-0 hover:bg-zinc-600 rounded-full p-2 hover:bg-opacity-40 ${scrollPosition==0 ? "hidden" : "block"} `}>
                 <ArrowBackIosNewIcon></ArrowBackIosNewIcon>
               </div>

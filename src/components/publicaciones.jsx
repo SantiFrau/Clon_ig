@@ -10,7 +10,7 @@ export default function Publicaciones (){
     return (<>
         {
         
-            <div className="flex flex-col gap-5 w-full">
+            <div className="flex flex-col gap-5 w-full md:w-2/3">
                {
                 publicaciones.map((publicacion,i)=>{
                    return(
